@@ -1,0 +1,123 @@
+.welcome{
+	margin-top: 5%;
+	padding-left: 5%;
+}
+
+.background{
+	background: url("../images/background.png");
+	background-position: 30% 32%;
+	
+}
+
+.btn{
+	display: inline;
+}
+
+.profile{
+	background: url("../images/profilebackground.jpg");
+}
+
+.jumbo_background{
+	background: url("../images/jumbo.jpg");
+	background-size: 100%;
+	background-position-y: 50%;
+	background-position-x: 0%;
+	
+}
+
+.jumbo-message{
+	color: white;
+	text-shadow: 2px 2px black;
+}
+
+.profile-area{
+	width:80%;
+	margin:auto;
+	margin-top: 2%;
+}
+
+.profile-details{
+	margin-top:4%;
+	padding-bottom: 1%;
+	border-bottom: 1px solid lightgray;
+}
+
+.bolded{
+	font-weight:600;
+}
+
+.heading, .table-content{
+	margin-top: 2%;
+	margin-left: 2%;
+}
+
+.messageboard-header{
+	margin-top: 2%;
+}
+
+.messageboard-text{
+	margin-left: 2%;
+}
+
+.message-table{
+	width:96%;
+	margin-left:2%;
+	margin-top:2%;
+}
+
+.thread_title{
+	width:60%;
+}
+
+.thread_user{
+	background-color: silver;
+}
+
+.thread-header{
+	height: 40px;
+}
+
+.thread-content{
+	height: 70px;
+}
+
+.posted_date{
+	margin-top: 1%;
+	margin-left: 2%;
+}
+
+.thread_user p {
+	margin-top: 20%;
+}
+
+.thread_message p{
+	margin-top: 3%;
+}
+
+.thread_message{
+	background-color: lightgray;
+}
+
+.message-area{
+ overflow: scroll;
+ background: url("../images/message.png");
+}
+
+.message-type{
+}
+
+.message-function{
+	height: 350px;
+	margin-top:4%;
+}
+
+.message-font{
+	font-weight: 900;
+	font-size: 1.5em;
+}
+
+.admin_jumbo{
+	height: 250px;
+	color: white;
+	text-shadow: 2px 2px black;
+}

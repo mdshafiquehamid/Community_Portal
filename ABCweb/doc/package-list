@@ -1,0 +1,6 @@
+org.websparrow.action
+org.websparrow.admin
+org.websparrow.bean
+org.websparrow.dao
+org.websparrow.job
+org.websparrow.test

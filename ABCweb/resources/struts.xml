@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+"-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+"http://struts.apache.org/dtds/struts-2.0.dtd">
+<struts>
+	<package name="default" extends="struts-default">
+		<action name="registeruser" class="org.websparrow.action.Register">
+			<result name="REGISTER">/portal/thankyou.jsp</result>
+			<result name="input">/portal/registration.jsp</result>
+		</action>
+		<action name="signin" class="org.websparrow.action.Login">
+			<result name="SIGNIN">/user/user.jsp</result>
+			<result name="input">/portal/index.jsp</result>
+			<result name="ADMIN">/administrator/administrator.jsp</result>
+		</action>
+		<action name="validateemail" class="org.websparrow.action.EmailValidation">
+			<result name="VALIDATE">/portal/passwordtwo.jsp</result>
+			<result name="input">/portal/password.jsp</result>
+		</action>
+		<action name="changepassword" class="org.websparrow.action.PasswordChange">
+			<result name="CHANGE">/portal/passwordconfirm.jsp</result>
+			<result name="input">/portal/passwordtwo.jsp</result>
+		</action>
+		<action name="search" class="org.websparrow.action.UserSearch">
+			<result name="SEARCH">/user/searchresults.jsp</result>
+		</action>
+		<action name="viewprofile" class="org.websparrow.action.ProfileView">
+			<result name="VIEW">/user/profile.jsp</result>
+		</action>
+		<action name="vieweditprofile" class="org.websparrow.action.ProfileUpdate">
+			<result name="UPDATE">/user/updateprofile.jsp</result>
+		</action>
+		<action name="updatequalification" class="org.websparrow.action.QualificationUpdate">
+			<result name="UPDATE">/user/qualifications.jsp</result>
+			<result name="NEW">/user/newqualification.jsp</result>
+		</action>
+		<action name="updateexperience" class="org.websparrow.action.ExperienceUpdate">
+			<result name="UPDATE">/user/experience.jsp</result>
+			<result name="NEW">/user/newexperience.jsp</result>
+		</action>
+		<action name="updateskill" class="org.websparrow.action.SkillUpdate">
+			<result name="NEW">/user/newskill.jsp</result>
+		</action>
+		<action name="registration">
+			<result>/portal/registration.jsp</result>
+		</action>
+		<action name="signinuser">
+			<result>/portal/index.jsp</result>
+		</action>
+		<action name="password">
+			<result>/portal/password.jsp</result>
+		</action>
+		<action name="adminsearch" class="org.websparrow.action.UserSearch">
+			<result name="SEARCH">/administrator/listusers.jsp</result>
+		</action>
+		<action name="adminviewprofile" class="org.websparrow.action.ProfileView">
+			<result name="VIEW">/administrator/profile.jsp</result>
+		</action>
+		<action name="adminlist" class="org.websparrow.admin.UsersList">
+			<result name="LIST">/administrator/listusers.jsp</result>
+		</action>
+		<action name="edituser" class="org.websparrow.admin.UserEdit">
+			<result name="EDIT">/administrator/edituser.jsp</result>
+		</action>
+		<action name="signout" class="org.websparrow.action.SignOut">
+			<result name="SIGNOUT">/portal/index.jsp</result>
+		</action>
+		<action name="postjob" class="org.websparrow.job.JobCreate">
+			<result name="NEW">/user/newjob.jsp</result>
+			<result name="UPDATE">/user/newjob.jsp</result>
+		</action>
+		<action name="adminpostjob" class="org.websparrow.job.JobCreate">
+			<result name="NEW">/administrator/newjob.jsp</result>
+			<result name="UPDATE">/administrator/newjob.jsp</result>
+		</action>
+		<action name="listjobs" class="org.websparrow.job.JobsView">
+			<result name="USER">/user/listjobs.jsp</result>
+			<result name="ADMIN">/administrator/listjobs.jsp</result>
+		</action>
+		<action name="applyjob" class="org.websparrow.job.JobApply">
+			<result name="APPLY">/user/applyjob.jsp</result>
+		</action>
+		<action name="viewresponses" class="org.websparrow.job.ResponsesView">
+			<result name="VIEW">/administrator/responses.jsp</result>
+		</action>
+		<action name="delete" class="org.websparrow.action.DeleteAction">
+			<result name="DELETE">/user/updateprofile.jsp</result>
+		</action>
+		<action name="userpostproject" class="org.websparrow.project.ProjectCreate">
+			<result name="NEW">/user/newproject.jsp</result>
+			<result name="UPDATE">/user/newproject.jsp</result>
+		</action>
+		<action name="userlistprojects" class="org.websparrow.project.ProjectsView">
+			<result name="VIEWPROJECTS">/user/listprojects.jsp</result>
+		</action>
+		<action name="adminpostproject" class="org.websparrow.project.ProjectCreate">
+			<result name="NEW">/administrator/newproject.jsp</result>
+			<result name="UPDATE">/administrator/newproject.jsp</result>
+		</action>
+		<action name="adminlistprojects" class="org.websparrow.project.ProjectsView">
+			<result name="VIEWPROJECTS">/administrator/listprojects.jsp</result>
+		</action>
+		<action name="userlistthreads" class="org.websparrow.thread.ThreadList">
+			<result name="LIST">/user/listthreads.jsp</result>
+		</action>
+		<action name="usercreatethread" class="org.websparrow.thread.ThreadCreate">
+			<result name="NEW">/user/newthread.jsp</result>
+			<result name="POST">/user/newthread.jsp</result>
+		</action>
+		<action name="userreplythread" class="org.websparrow.thread.ThreadReply">
+			<result name="LIST">/user/viewthread.jsp</result>
+			<result name="REPLY">/user/viewthread.jsp</result>
+		</action>
+		<action name="message" class="org.websparrow.message.MessageList">
+			<result name="LIST">/user/messageuser.jsp</result>
+		</action>
+		<action name="replymessage" class="org.websparrow.message.MessageReply">
+			<result name="REPLY">/user/messageuser.jsp</result>
+		</action>
+		<action name="adminlistthreads" class="org.websparrow.thread.ThreadList">
+			<result name="LIST">/administrator/listthreads.jsp</result>
+		</action>
+		<action name="admincreatethread" class="org.websparrow.thread.ThreadCreate">
+			<result name="NEW">/administrator/newthread.jsp</result>
+			<result name="POST">/administrator/newthread.jsp</result>
+		</action>
+		<action name="adminreplythread" class="org.websparrow.thread.ThreadReply">
+			<result name="LIST">/administrator/viewthread.jsp</result>
+			<result name="REPLY">/administrator/viewthread.jsp</result>
+		</action>
+		
+	</package>
+</struts>  
